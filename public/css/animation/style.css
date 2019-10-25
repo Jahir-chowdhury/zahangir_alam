@@ -1,0 +1,32 @@
+/**
+ * cssanimation.css
+ * https://www.cssanimatio.io
+ * Created and maintained by: Pavel
+ * Find me at: https://www.linkedin.com/in/yesiamrocks/
+ * Email: hello@cssanimation.io
+ * Github: https://github.com/yesiamrocks/cssanimation.io
+ * Title: A CSS Animation Library for Developers and Ninjas
+ * Copyright (c) 2017 Pavel
+ * License: cssanimation.io is licensed under the MIT license
+ **/
+
+.container-fluid h1 {
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #292728;
+    text-align: center;
+    font-size:4vw;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.cssanimation span { display: inline-block }
+
+.leFadeIn span { animation-name: leFadeIn }
+@keyframes leFadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }

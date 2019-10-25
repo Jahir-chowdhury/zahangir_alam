@@ -1,0 +1,116 @@
+  * {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;
+    font-weight: 100;
+    text-align: justify;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color:#ccf2ff;
+  width: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  width: 95%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+  padding: 10px;
+}
+
+/* Change background color of buttons on hover */
+
+
+.tab button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.tab button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.tab button:hover span {
+  padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.tab button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  /*  border: 1px solid #ccc;*/
+  width: 100%;
+  border-left: none;}
+#myImg{
+  height:20px;
+  width:20px;
+  border-radious:100%;
+}
+.content{
+  background-color: #F0ECE9;margin:12px;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.footer{background-color: #E5EAF8;;margin-top: 30px;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   padding: 15px; }
+
+
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 300px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
